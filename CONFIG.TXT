@@ -86,7 +86,7 @@ H_Thresh:  0     ; Minimum horizontal speed for tone (cm/s)
 Use_SAS:   1     ; Use skydiver's airspeed
                  ;   0 = No
                  ;   1 = Yes
-TZ_Offset: 0     ; Timezone offset of output files in seconds
+TZ_Offset: -14400; Timezone offset of output files in seconds
                  ;   -14400 = UTC-4 (EDT)
                  ;   -18000 = UTC-5 (EST, CDT)
                  ;   -21600 = UTC-6 (CST, MDT)
