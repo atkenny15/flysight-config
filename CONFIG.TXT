@@ -18,7 +18,7 @@ Rate:      200   ; Measurement rate (ms)
 
 ; Tone settings
 
-Mode:      2     ; Measurement mode
+Mode:      0     ; Measurement mode
                  ;   0 = Horizontal speed
                  ;   1 = Vertical speed
                  ;   2 = Glide ratio
@@ -27,7 +27,7 @@ Mode:      2     ; Measurement mode
 Min:       0     ; Lowest pitch value
                  ;   cm/s        in Mode 0, 1, or 4
                  ;   ratio * 100 in Mode 2 or 3
-Max:       450   ; Highest pitch value
+Max:       8941  ; Highest pitch value
                  ;   cm/s        in Mode 0, 1, or 4
                  ;   ratio * 100 in Mode 2 or 3
 Limits:    1     ; Behaviour when outside bounds
@@ -62,7 +62,7 @@ Flatline:  0     ; Flatline at minimum rate
 
 ; Speech settings
 
-Sp_Mode:   2     ; Speech mode
+Sp_Mode:   0     ; Speech mode
                  ;   0 = Horizontal speed
                  ;   1 = Vertical speed
                  ;   2 = Glide ratio
@@ -73,7 +73,7 @@ Sp_Units:  1     ; Speech units
                  ;   1 = mph
 Sp_Rate:   8     ; Speech rate (s)
                  ;   0 = No speech
-Sp_Dec:    1     ; Decimal places for speech
+Sp_Dec:    0     ; Decimal places for speech
 Sp_Volume: 6     ; 0 (min) to 8 (max)
 
 ; Thresholds
