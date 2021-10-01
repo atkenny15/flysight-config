@@ -183,5 +183,5 @@ Alt_Step:      0 ; Altitude between announcements
 ;          will be silenced during these windows and only
 ;          alarms will be audible.
 
-Win_Top:       0 ; Silence window top (m)
+Win_Top:     600 ; Silence window top (m)
 Win_Bottom:    0 ; Silence window bottom (m)
