@@ -1,4 +1,4 @@
-; Firmware version v20180521
+; Firmware version v20210520
 
 ; For information on configuring FlySight, please go to
 ;     http://flysight.ca/wiki
@@ -69,20 +69,24 @@ Flatline:  0     ; Flatline at minimum rate
 
 ; Speech settings
 
+Sp_Rate:   0     ; Speech rate (s)
+                 ;   0 = No speech
+Sp_Volume: 8     ; 0 (min) to 8 (max)
+
 Sp_Mode:   2     ; Speech mode
                  ;   0 = Horizontal speed
                  ;   1 = Vertical speed
                  ;   2 = Glide ratio
                  ;   3 = Inverse glide ratio
                  ;   4 = Total speed
+                 ;   5 = Altitude above DZ_Elev
                  ;   11 = Dive angle
 Sp_Units:  1     ; Speech units
-                 ;   0 = km/h
-                 ;   1 = mph
-Sp_Rate:   0     ; Speech rate (s)
-                 ;   0 = No speech
-Sp_Dec:    0     ; Decimal places for speech
-Sp_Volume: 8     ; 0 (min) to 8 (max)
+                 ;   0 = km/h or m
+                 ;   1 = mph or feet
+Sp_Dec:    1     ; Speech precision
+                 ;   Altitude step in Mode 5
+                 ;   Decimal places in all other Modes
 
 ; Thresholds
 
