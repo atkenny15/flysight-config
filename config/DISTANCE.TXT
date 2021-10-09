@@ -130,7 +130,7 @@ Win_Above:    20 ; Window above each alarm (m)
 Win_Below:    20 ; Window below each alarm (m)
 DZ_Elev:     418 ; Ground elevation (m above sea level)
 
-Alarm_Elev: 3300 ; Alarm elevation (m above ground level)
+Alarm_Elev: 2800 ; Alarm elevation (m above ground level)
 Alarm_Type:    4 ; Alarm type
                  ;   0 = No alarm
                  ;   1 = Beep
@@ -139,21 +139,21 @@ Alarm_Type:    4 ; Alarm type
                  ;   4 = Play file
 Alarm_File:    3 ; File to be played
 
-Alarm_Elev: 3200 ; Alarm elevation (m above ground level)
+Alarm_Elev: 2700 ; Alarm elevation (m above ground level)
 Alarm_Type:    4 ; Alarm type
 Alarm_File:    2 ; File to be played
 
-Alarm_Elev: 3100 ; Alarm elevation (m above ground level)
+Alarm_Elev: 2600 ; Alarm elevation (m above ground level)
 Alarm_Type:    4 ; Alarm type
 Alarm_File:    1 ; File to be played
 
-Alarm_Elev: 3000 ; Alarm elevation (m above ground level)
+Alarm_Elev: 2500 ; Alarm elevation (m above ground level)
 Alarm_Type:    2 ; Alarm type
 
-Alarm_Elev: 2050; Alarm elevation (m above ground level)
+Alarm_Elev: 1550; Alarm elevation (m above ground level)
 Alarm_Type:    2 ; Alarm type
 
-Alarm_Elev: 1950; Alarm elevation (m above ground level)
+Alarm_Elev: 1450; Alarm elevation (m above ground level)
 Alarm_Type:    3 ; Alarm type
 
 ; Altitude mode settings
