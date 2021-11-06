@@ -128,8 +128,8 @@ Init_File: distance ; File to be played
 
 Win_Above:    20 ; Window above each alarm (m)
 Win_Below:    20 ; Window below each alarm (m)
-;DZ_Elev:     418 ; Ground elevation (m above sea level) - Skydive Pennsylvania
-DZ_Elev:     472 ; Ground elevation (m above sea level) - Sawtooth
+DZ_Elev:     418 ; Ground elevation (m above sea level) - Skydive Pennsylvania
+;DZ_Elev:     472 ; Ground elevation (m above sea level) - Sawtooth
 
 Alarm_Elev: 2800 ; Alarm elevation (m above ground level)
 Alarm_Type:    4 ; Alarm type
