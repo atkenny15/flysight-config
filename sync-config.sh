@@ -7,14 +7,15 @@ function print_help() {
     echo "Usage: $0 [options] <dest>"
     echo ""
     echo "Options:"
+    echo "  -n, --dry-run       dry run"
     echo "  -h, --help          display this help info"
 }
 
 TEMP=$( \
     getopt \
         -n $(basename "$0") \
-        -o h \
-        --long help \
+        -o hn \
+        --long help,dry-run \
         -- "$@"
     )
 
@@ -22,8 +23,10 @@ if [ $? != 0 ]; then echo "Terminating..." >&2; exit 1; fi
 
 eval set -- "$TEMP"
 
+dry_run=
 while true; do
     case "$1" in
+        -n|--dry-run)   dry_run="--dry-run"     ; shift     ;;
         -h|--help)      print_help              ; exit 0    ;;
         --)             shift                   ; break     ;;
         *)              echo "Internal error!"  ; exit 1    ;;
@@ -38,4 +41,7 @@ if [[ $# -ne $num_req ]]; then
 fi
 dest="$1"
 
-sudo rsync -iva --progress --stats --no-o --no-g --no-p CONFIG.TXT config "$dest/"
+cd "${DIR}"
+
+echo sudo rsync -iva $dry_run --progress --stats --no-o --no-g --no-p CONFIG.TXT config "$dest/"
+sudo rsync -iva $dry_run --progress --stats --no-o --no-g --no-p CONFIG.TXT config "$dest/"
