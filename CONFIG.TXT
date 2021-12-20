@@ -95,7 +95,7 @@ H_Thresh:  0     ; Minimum horizontal speed for tone (cm/s)
 
 ; Miscellaneous
 
-Use_SAS:   1     ; Use skydiver's airspeed
+Use_SAS:   0     ; Use skydiver's airspeed
                  ;   0 = No
                  ;   1 = Yes
 TZ_Offset: 0     ; Timezone offset of output files in seconds
@@ -126,18 +126,11 @@ Init_File: 0     ; File to be played
 ; NOTE:    Alarm elevations are given in meters above ground
 ;          elevation, which is specified in DZ_Elev.
 
-Win_Above:     0 ; Window above each alarm (m)
-Win_Below:     0 ; Window below each alarm (m)
-DZ_Elev:       0 ; Ground elevation (m above sea level)
-
-Alarm_Elev:    0 ; Alarm elevation (m above ground level)
-Alarm_Type:    0 ; Alarm type
-                 ;   0 = No alarm
-                 ;   1 = Beep
-                 ;   2 = Chirp up
-                 ;   3 = Chirp down
-                 ;   4 = Play file
-Alarm_File:    0 ; File to be played
+Win_Above:    20 ; Window above each alarm (m)
+Win_Below:    20 ; Window below each alarm (m)
+;DZ_Elev:     418 ; Ground elevation (m above sea level) - Skydive Pennsylvania
+;DZ_Elev:     472 ; Ground elevation (m above sea level) - Sawtooth
+DZ_Elev:     24 ; Ground elevation (m above sea level) - Skydive Deland
 
 ; Altitude mode settings
 
@@ -166,5 +159,5 @@ Alt_Step:      0 ; Altitude between announcements
 ;          will be silenced during these windows and only
 ;          alarms will be audible.
 
-Win_Top:       0 ; Silence window top (m)
+Win_Top:     600 ; Silence window top (m)
 Win_Bottom:    0 ; Silence window bottom (m)
