@@ -14,7 +14,7 @@ Model:     7     ; Dynamic model
                  ;   6 = Airborne with < 1 G acceleration
                  ;   7 = Airborne with < 2 G acceleration
                  ;   8 = Airborne with < 4 G acceleration
-Rate:      200   ; Measurement rate (ms)
+Rate:      100   ; Measurement rate (ms)
 
 ; Tone settings
 
