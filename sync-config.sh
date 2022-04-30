@@ -3,10 +3,14 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 set -euo pipefail
 
+dest="/mnt/temp1"
+device="/dev/sdb1"
 function print_help() {
-    echo "Usage: $0 [options] <dest>"
+    echo "Usage: $0 [options]"
     echo ""
     echo "Options:"
+    echo "  -d, --device=DEV    flysight device ($device)"
+    echo "      --dest=PATH     destination directory ($dest)"
     echo "  -n, --dry-run       dry run"
     echo "  -h, --help          display this help info"
 }
@@ -14,8 +18,8 @@ function print_help() {
 TEMP=$( \
     getopt \
         -n $(basename "$0") \
-        -o hn \
-        --long help,dry-run \
+        -o hnd: \
+        --long help,dry-run,device: \
         -- "$@"
     )
 
@@ -26,6 +30,7 @@ eval set -- "$TEMP"
 dry_run=
 while true; do
     case "$1" in
+        -d|--device)    device="$2"             ; shift 2   ;;
         -n|--dry-run)   dry_run="--dry-run"     ; shift     ;;
         -h|--help)      print_help              ; exit 0    ;;
         --)             shift                   ; break     ;;
@@ -33,15 +38,17 @@ while true; do
     esac
 done
 
-num_req=1
+num_req=0
 if [[ $# -ne $num_req ]]; then
     print_help
     echo "ERROR: Script requires $num_req arguments, but got $#"
     exit 1
 fi
-dest="$1"
+
+set -x
 
 cd "${DIR}"
 
-echo sudo rsync -iva $dry_run --progress --stats --no-o --no-g --no-p CONFIG.TXT config "$dest/"
+sudo mount "$device" "$dest"
 sudo rsync -iva $dry_run --progress --stats --no-o --no-g --no-p CONFIG.TXT config "$dest/"
+sudo umount "$dest"
