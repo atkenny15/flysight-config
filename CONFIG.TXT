@@ -151,13 +151,3 @@ Alt_Units:     1 ; Altitude units
                  ;   1 = ft
 Alt_Step:      0 ; Altitude between announcements
                  ;   0 = No altitude
-
-; Silence windows
-
-; NOTE:    Silence windows are given in meters above ground
-;          elevation, which is specified in DZ_Elev. Tones
-;          will be silenced during these windows and only
-;          alarms will be audible.
-
-Win_Top:     600 ; Silence window top (m)
-Win_Bottom:    0 ; Silence window bottom (m)
