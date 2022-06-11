@@ -49,6 +49,6 @@ set -x
 
 cd "${DIR}"
 
-sudo mount "$device" "$dest"
+sudo mount -o umask=000 "$device" "$dest"
 sudo rsync -iva $dry_run --progress --stats --no-o --no-g --no-p CONFIG.TXT config "$dest/"
 sudo umount "$dest"

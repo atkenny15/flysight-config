@@ -48,6 +48,6 @@ cd "${DIR}"
 
 sudo mount "$device" "$dest"
 for fn in CONFIG.TXT config/*; do
-    git diff --no-index "$dest/$fn" "$fn"
+    git diff --no-index "$dest/$fn" "$fn" || true
 done
 sudo umount "$dest"
