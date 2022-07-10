@@ -1,0 +1,128 @@
+; Firmware version v20210520
+
+; For information on configuring FlySight, please go to
+;     http://flysight.ca/wiki
+
+; Tone settings
+
+Mode:      0     ; Measurement mode
+                 ;   0 = Horizontal speed
+                 ;   1 = Vertical speed
+                 ;   2 = Glide ratio
+                 ;   3 = Inverse glide ratio
+                 ;   4 = Total speed
+                 ;   11 = Dive angle
+Min:       3000  ; Lowest pitch value
+                 ;   cm/s        in Mode 0, 1, or 4
+                 ;   ratio * 100 in Mode 2 or 3
+                 ;   degrees     in Mode 11
+Max:       9000  ; Highest pitch value
+                 ;   cm/s        in Mode 0, 1, or 4
+                 ;   ratio * 100 in Mode 2 or 3
+                 ;   degrees     in Mode 11
+
+; Rate settings
+
+Mode_2:    9     ; Determines tone rate
+                 ;   0 = Horizontal speed
+                 ;   1 = Vertical speed
+                 ;   2 = Glide ratio
+                 ;   3 = Inverse glide ratio
+                 ;   4 = Total speed
+                 ;   8 = Magnitude of Value 1
+                 ;   9 = Change in Value 1
+                 ;   11 = Dive angle
+Min_Val_2: 300   ; Lowest rate value
+                 ;   cm/s          when Mode 2 = 0, 1, or 4
+                 ;   ratio * 100   when Mode 2 = 2 or 3
+                 ;   percent * 100 when Mode 2 = 9
+                 ;   degrees       when Mode 2 = 11
+Max_Val_2: 1500  ; Highest rate value
+                 ;   cm/s          when Mode 2 = 0, 1, or 4
+                 ;   ratio * 100   when Mode 2 = 2 or 3
+                 ;   percent * 100 when Mode 2 = 9
+                 ;   degrees       when Mode 2 = 11
+
+; Speech settings
+
+Sp_Rate:   5     ; Speech rate (s)
+                 ;   0 = No speech
+Sp_Volume: 6     ; 0 (min) to 8 (max)
+
+Sp_Mode:   11    ; Speech mode
+                 ;   0 = Horizontal speed
+                 ;   1 = Vertical speed
+                 ;   2 = Glide ratio
+                 ;   3 = Inverse glide ratio
+                 ;   4 = Total speed
+                 ;   5 = Altitude above DZ_Elev
+                 ;   11 = Dive angle
+Sp_Units:  0     ; Speech units
+                 ;   0 = km/h or m
+                 ;   1 = mph or feet
+Sp_Dec:    0     ; Speech precision
+                 ;   Altitude step in Mode 5
+                 ;   Decimal places in all other Modes
+
+; Initialization
+
+Init_Mode: 2     ; When the FlySight is powered on
+                 ;   0 = Do nothing
+                 ;   1 = Test speech mode
+                 ;   2 = Play file
+Init_File: dive  ; File to be played
+
+; Alarm settings
+
+; WARNING: GPS measurements depend on very weak signals
+;          received from orbiting satellites. As such, they
+;          are prone to interference, and should NEVER be
+;          relied upon for life saving purposes.
+
+;          UNDER NO CIRCUMSTANCES SHOULD THESE ALARMS BE
+;          USED TO INDICATE DEPLOYMENT OR BREAKOFF ALTITUDE.
+
+; NOTE:    Alarm elevations are given in meters above ground
+;          elevation, which is specified in DZ_Elev.
+
+Alarm_Elev: 3300 ; Alarm elevation (m above ground level)
+Alarm_Type:    1 ; Alarm type
+
+Alarm_Elev: 2800 ; Alarm elevation (m above ground level)
+Alarm_Type:    4 ; Alarm type
+                 ;   0 = No alarm
+                 ;   1 = Beep
+                 ;   2 = Chirp up
+                 ;   3 = Chirp down
+                 ;   4 = Play file
+Alarm_File:    3 ; File to be played
+
+Alarm_Elev: 2700 ; Alarm elevation (m above ground level)
+Alarm_Type:    4 ; Alarm type
+Alarm_File:    2 ; File to be played
+
+Alarm_Elev: 2600 ; Alarm elevation (m above ground level)
+Alarm_Type:    4 ; Alarm type
+Alarm_File:    1 ; File to be played
+
+Alarm_Elev: 2500 ; Alarm elevation (m above ground level)
+Alarm_Type:    2 ; Alarm type
+
+Alarm_Elev: 1550; Alarm elevation (m above ground level)
+Alarm_Type:    2 ; Alarm type
+
+Alarm_Elev: 1450; Alarm elevation (m above ground level)
+Alarm_Type:    3 ; Alarm type
+
+; Silence windows
+
+; NOTE:    Silence windows are given in meters above ground
+;          elevation, which is specified in DZ_Elev. Tones
+;          will be silenced during these windows and only
+;          alarms will be audible.
+
+;Win_Top:    3350 ; Silence window top (m)
+;Win_Bottom: 2450 ; Silence window bottom (m)
+
+Win_Top:     600 ; Silence window top (m)
+Win_Bottom:    0 ; Silence window bottom (m)
