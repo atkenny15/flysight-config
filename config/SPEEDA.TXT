@@ -85,7 +85,7 @@ Init_File: dive  ; File to be played
 ; NOTE:    Alarm elevations are given in meters above ground
 ;          elevation, which is specified in DZ_Elev.
 
-Alarm_Elev: 3300 ; Alarm elevation (m above ground level)
+Alarm_Elev: 3400 ; Alarm elevation (m above ground level)
 Alarm_Type:    1 ; Alarm type
 
 Alarm_Elev: 2800 ; Alarm elevation (m above ground level)
