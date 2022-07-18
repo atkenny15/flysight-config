@@ -129,9 +129,10 @@ Init_File: 0     ; File to be played
 Win_Above:    20 ; Window above each alarm (m)
 Win_Below:    20 ; Window below each alarm (m)
 ;DZ_Elev:     418 ; Ground elevation (m above sea level) - Skydive Pennsylvania
-DZ_Elev:     338 ; Ground elevation (m above sea level) - Cleveland Skydiving Center
+;DZ_Elev:     338 ; Ground elevation (m above sea level) - Cleveland Skydiving Center
 ;DZ_Elev:     472 ; Ground elevation (m above sea level) - Sawtooth
 ;DZ_Elev:     24 ; Ground elevation (m above sea level) - Skydive Deland
+DZ_Elev:     188 ; Ground elevation (m above sea level) - Skydive Chicago
 
 ; Altitude mode settings
 
