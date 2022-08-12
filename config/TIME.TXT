@@ -49,7 +49,7 @@ Sp_Rate:   5     ; Speech rate (s)
                  ;   0 = No speech
 Sp_Volume: 8     ; 0 (min) to 8 (max)
 
-Sp_Mode:   1     ; Speech mode
+Sp_Mode:   0     ; Speech mode
                  ;   0 = Horizontal speed
                  ;   1 = Vertical speed
                  ;   2 = Glide ratio
@@ -112,7 +112,6 @@ Alarm_File:    2 ; File to be played
 Alarm_Elev: 2600 ; Alarm elevation (m above ground level)
 Alarm_Type:    4 ; Alarm type
 Alarm_File:    1 ; File to be played
-
 
 Alarm_Elev: 2500 ; Alarm elevation (m above ground level)
 Alarm_Type:    2 ; Alarm type
