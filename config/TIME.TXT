@@ -12,11 +12,15 @@ Mode:      1     ; Measurement mode
                  ;   3 = Inverse glide ratio
                  ;   4 = Total speed
                  ;   11 = Dive angle
-Min:       500   ; Lowest pitch value
+
+                 ; 30 km/h
+Min:       833   ; Lowest pitch value
                  ;   cm/s        in Mode 0, 1, or 4
                  ;   ratio * 100 in Mode 2 or 3
                  ;   degrees     in Mode 11
-Max:       3000  ; Highest pitch value
+
+                 ; 50 km/h
+Max:       1389  ; Highest pitch value
                  ;   cm/s        in Mode 0, 1, or 4
                  ;   ratio * 100 in Mode 2 or 3
                  ;   degrees     in Mode 11
