@@ -133,7 +133,7 @@ Alarm_Type:    3 ; Alarm type
 ;          will be silenced during these windows and only
 ;          alarms will be audible.
 
-Win_Top:    3350 ; Silence window top (m)
+Win_Top:    3500 ; Silence window top (m)
 Win_Bottom: 2450 ; Silence window bottom (m)
 
 Win_Top:     600 ; Silence window top (m)
