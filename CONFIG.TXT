@@ -38,6 +38,14 @@ Flatline:  0     ; Flatline at minimum rate
 V_Thresh:  1000  ; Minimum vertical speed for tone (cm/s)
 H_Thresh:  0     ; Minimum horizontal speed for tone (cm/s)
 
+; Acro settings
+
+Acro_Win:           -1   ; Acro window, meters below exit (negative to disable exit detection)
+Exit_Num_Down:      5    ; Consecutive points down to indicate an exit
+Exit_Num_Up:        50   ; Consecutive points up reset the exit altitude
+Exit_Down_Thresh:   800  ; Speed to indicate travelling downwards (initialize exit altitude)
+Exit_Up_Thresh:     -800 ; Speed to indicate travelling upwards (reset exit altitude)
+
 ; Miscellaneous
 
 Use_SAS:   0     ; Use skydiver's airspeed
