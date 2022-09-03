@@ -1,0 +1,171 @@
+; Firmware version v20210520
+
+; For information on configuring FlySight, please go to
+;     http://flysight.ca/wiki
+
+; Tone settings
+
+Mode:      2     ; Measurement mode
+                 ;   0 = Horizontal speed
+                 ;   1 = Vertical speed
+                 ;   2 = Glide ratio
+                 ;   3 = Inverse glide ratio
+                 ;   4 = Total speed
+                 ;   11 = Dive angle
+Min:       300   ; Lowest pitch value
+                 ;   cm/s        in Mode 0, 1, or 4
+                 ;   ratio * 100 in Mode 2 or 3
+                 ;   degrees     in Mode 11
+Max:       400   ; Highest pitch value
+                 ;   cm/s        in Mode 0, 1, or 4
+                 ;   ratio * 100 in Mode 2 or 3
+                 ;   degrees     in Mode 11
+
+; Rate settings
+
+Mode_2:    9     ; Determines tone rate
+                 ;   0 = Horizontal speed
+                 ;   1 = Vertical speed
+                 ;   2 = Glide ratio
+                 ;   3 = Inverse glide ratio
+                 ;   4 = Total speed
+                 ;   8 = Magnitude of Value 1
+                 ;   9 = Change in Value 1
+                 ;   11 = Dive angle
+Min_Val_2: 300   ; Lowest rate value
+                 ;   cm/s          when Mode 2 = 0, 1, or 4
+                 ;   ratio * 100   when Mode 2 = 2 or 3
+                 ;   percent * 100 when Mode 2 = 9
+                 ;   degrees       when Mode 2 = 11
+Max_Val_2: 1500  ; Highest rate value
+                 ;   cm/s          when Mode 2 = 0, 1, or 4
+                 ;   ratio * 100   when Mode 2 = 2 or 3
+                 ;   percent * 100 when Mode 2 = 9
+                 ;   degrees       when Mode 2 = 11
+
+; Speech settings
+
+Sp_Rate:   0     ; Speech rate (s)
+                 ;   0 = No speech
+Sp_Volume: 8     ; 0 (min) to 8 (max)
+
+Sp_Mode:   0     ; Speech mode
+                 ;   0 = Horizontal speed
+                 ;   1 = Vertical speed
+                 ;   2 = Glide ratio
+                 ;   3 = Inverse glide ratio
+                 ;   4 = Total speed
+                 ;   5 = Altitude above DZ_Elev
+                 ;   11 = Dive angle
+Sp_Units:  0     ; Speech units
+                 ;   0 = km/h or m
+                 ;   1 = mph or feet
+Sp_Dec:    0     ; Speech precision
+                 ;   Altitude step in Mode 5
+                 ;   Decimal places in all other Modes
+
+; Thresholds
+
+; Disable tones
+V_Thresh:  11111 ; Minimum vertical speed for tone (cm/s)
+H_Thresh:  11111 ; Minimum horizontal speed for tone (cm/s)
+
+; Acro settings
+
+Acro_Win:           2286 ; Acro window, meters below exit (negative to disable exit detection)
+Exit_Num_Down:      5    ; Consecutive points down to indicate an exit
+Exit_Num_Up:        50   ; Consecutive points up reset the exit altitude
+Exit_Down_Thresh:   800  ; Speed to indicate travelling downwards (initialize exit altitude)
+Exit_Up_Thresh:     -800 ; Speed to indicate travelling upwards (reset exit altitude)
+
+; Initialization
+
+Init_Mode: 2     ; When the FlySight is powered on
+                 ;   0 = Do nothing
+                 ;   1 = Test speech mode
+                 ;   2 = Play file
+Init_File: acro  ; File to be played
+
+; Alarm settings
+
+; WARNING: GPS measurements depend on very weak signals
+;          received from orbiting satellites. As such, they
+;          are prone to interference, and should NEVER be
+;          relied upon for life saving purposes.
+
+;          UNDER NO CIRCUMSTANCES SHOULD THESE ALARMS BE
+;          USED TO INDICATE DEPLOYMENT OR BREAKOFF ALTITUDE.
+
+; NOTE:    Alarm elevations are given in meters above ground
+;          elevation, which is specified in DZ_Elev.
+
+; 7000 ft
+Alarm_Elev: 2133 ; Alarm elevation (m above ground level)
+Alarm_Type:    4 ; Alarm type
+                 ;   0 = No alarm
+                 ;   1 = Beep
+                 ;   2 = Chirp up
+                 ;   3 = Chirp down
+                 ;   4 = Play file
+Alarm_File:    7 ; File to be played
+Alarm_Acro:    1 ; Alarm is height above bottom of acro window
+
+; 6000 ft
+Alarm_Elev: 1829 ; Alarm elevation (m above ground level)
+Alarm_Type:    4 ; Alarm type
+Alarm_File:    6 ; File to be played
+Alarm_Acro:    1 ; Alarm is height above bottom of acro window
+
+; 5000 ft
+Alarm_Elev: 1524 ; Alarm elevation (m above ground level)
+Alarm_Type:    4 ; Alarm type
+Alarm_File:    5 ; File to be played
+Alarm_Acro:    1 ; Alarm is height above bottom of acro window
+
+; 4000 ft
+Alarm_Elev: 1219 ; Alarm elevation (m above ground level)
+Alarm_Type:    4 ; Alarm type
+Alarm_File:    4 ; File to be played
+Alarm_Acro:    1 ; Alarm is height above bottom of acro window
+
+; 3000 ft
+Alarm_Elev:  914 ; Alarm elevation (m above ground level)
+Alarm_Type:    4 ; Alarm type
+Alarm_File:    3 ; File to be played
+Alarm_Acro:    1 ; Alarm is height above bottom of acro window
+
+; 2000 ft
+Alarm_Elev:  610 ; Alarm elevation (m above ground level)
+Alarm_Type:    4 ; Alarm type
+Alarm_File:    2 ; File to be played
+Alarm_Acro:    1 ; Alarm is height above bottom of acro window
+
+; 1000 ft
+Alarm_Elev:  305 ; Alarm elevation (m above ground level)
+Alarm_Type:    4 ; Alarm type
+Alarm_File:    1 ; File to be played
+Alarm_Acro:    1 ; Alarm is height above bottom of acro window
+
+; 500 ft
+Alarm_Elev:  152 ; Alarm elevation (m above ground level)
+Alarm_Type:    4 ; Alarm type
+Alarm_File:    1 ; File to be played
+Alarm_Acro:  dot ; Alarm is height above bottom of acro window
+
+Alarm_Elev:   50; Alarm elevation (m above ground level)
+Alarm_Type:    2 ; Alarm type
+Alarm_Acro:    1 ; Alarm is height above bottom of acro window
+
+Alarm_Elev:  -50; Alarm elevation (m above ground level)
+Alarm_Type:    3 ; Alarm type
+Alarm_Acro:    1 ; Alarm is height above bottom of acro window
+
+; Silence windows
+
+; NOTE:    Silence windows are given in meters above ground
+;          elevation, which is specified in DZ_Elev. Tones
+;          will be silenced during these windows and only
+;          alarms will be audible.
+
+Win_Top:     600 ; Silence window top (m)
+Win_Bottom:    0 ; Silence window bottom (m)
