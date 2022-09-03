@@ -149,8 +149,8 @@ Alarm_Acro:    1 ; Alarm is height above bottom of acro window
 ; 500 ft
 Alarm_Elev:  152 ; Alarm elevation (m above ground level)
 Alarm_Type:    4 ; Alarm type
-Alarm_File:    1 ; File to be played
-Alarm_Acro:  dot ; Alarm is height above bottom of acro window
+Alarm_File:  dot ; File to be played
+Alarm_Acro:    1 ; Alarm is height above bottom of acro window
 
 Alarm_Elev:   50; Alarm elevation (m above ground level)
 Alarm_Type:    2 ; Alarm type
