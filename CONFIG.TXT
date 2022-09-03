@@ -18,21 +18,6 @@ Rate:      100   ; Measurement rate (ms)
 
 ; Tone settings
 
-Mode:      2     ; Measurement mode
-                 ;   0 = Horizontal speed
-                 ;   1 = Vertical speed
-                 ;   2 = Glide ratio
-                 ;   3 = Inverse glide ratio
-                 ;   4 = Total speed
-                 ;   11 = Dive angle
-Min:       100   ; Lowest pitch value
-                 ;   cm/s        in Mode 0, 1, or 4
-                 ;   ratio * 100 in Mode 2 or 3
-                 ;   degrees     in Mode 11
-Max:       550   ; Highest pitch value
-                 ;   cm/s        in Mode 0, 1, or 4
-                 ;   ratio * 100 in Mode 2 or 3
-                 ;   degrees     in Mode 11
 Limits:    1     ; Behaviour when outside bounds
                  ;   0 = No tone
                  ;   1 = Min/max tone
@@ -42,51 +27,11 @@ Volume:    6     ; 0 (min) to 8 (max)
 
 ; Rate settings
 
-Mode_2:    9     ; Determines tone rate
-                 ;   0 = Horizontal speed
-                 ;   1 = Vertical speed
-                 ;   2 = Glide ratio
-                 ;   3 = Inverse glide ratio
-                 ;   4 = Total speed
-                 ;   8 = Magnitude of Value 1
-                 ;   9 = Change in Value 1
-                 ;   11 = Dive angle
-Min_Val_2: 300   ; Lowest rate value
-                 ;   cm/s          when Mode 2 = 0, 1, or 4
-                 ;   ratio * 100   when Mode 2 = 2 or 3
-                 ;   percent * 100 when Mode 2 = 9
-                 ;   degrees       when Mode 2 = 11
-Max_Val_2: 1500  ; Highest rate value
-                 ;   cm/s          when Mode 2 = 0, 1, or 4
-                 ;   ratio * 100   when Mode 2 = 2 or 3
-                 ;   percent * 100 when Mode 2 = 9
-                 ;   degrees       when Mode 2 = 11
 Min_Rate:  100   ; Minimum rate (Hz * 100)
 Max_Rate:  500   ; Maximum rate (Hz * 100)
 Flatline:  0     ; Flatline at minimum rate
                  ;   0 = No
                  ;   1 = Yes
-
-; Speech settings
-
-Sp_Rate:   0     ; Speech rate (s)
-                 ;   0 = No speech
-Sp_Volume: 8     ; 0 (min) to 8 (max)
-
-Sp_Mode:   2     ; Speech mode
-                 ;   0 = Horizontal speed
-                 ;   1 = Vertical speed
-                 ;   2 = Glide ratio
-                 ;   3 = Inverse glide ratio
-                 ;   4 = Total speed
-                 ;   5 = Altitude above DZ_Elev
-                 ;   11 = Dive angle
-Sp_Units:  1     ; Speech units
-                 ;   0 = km/h or m
-                 ;   1 = mph or feet
-Sp_Dec:    1     ; Speech precision
-                 ;   Altitude step in Mode 5
-                 ;   Decimal places in all other Modes
 
 ; Thresholds
 
