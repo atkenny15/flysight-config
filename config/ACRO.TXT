@@ -99,45 +99,21 @@ Init_File: acro  ; File to be played
 ; NOTE:    Alarm elevations are given in meters above ground
 ;          elevation, which is specified in DZ_Elev.
 
-; 7000 ft
-Alarm_Elev: 2133 ; Alarm elevation (m above ground level)
+; 5000 ft
+Alarm_Elev: 1524 ; Alarm elevation (m above ground level)
 Alarm_Type:    4 ; Alarm type
                  ;   0 = No alarm
                  ;   1 = Beep
                  ;   2 = Chirp up
                  ;   3 = Chirp down
                  ;   4 = Play file
-Alarm_File:    7 ; File to be played
-Alarm_Acro:    1 ; Alarm is height above bottom of acro window
-
-; 6000 ft
-Alarm_Elev: 1829 ; Alarm elevation (m above ground level)
-Alarm_Type:    4 ; Alarm type
-Alarm_File:    6 ; File to be played
-Alarm_Acro:    1 ; Alarm is height above bottom of acro window
-
-; 5000 ft
-Alarm_Elev: 1524 ; Alarm elevation (m above ground level)
-Alarm_Type:    4 ; Alarm type
 Alarm_File:    5 ; File to be played
-Alarm_Acro:    1 ; Alarm is height above bottom of acro window
-
-; 4000 ft
-Alarm_Elev: 1219 ; Alarm elevation (m above ground level)
-Alarm_Type:    4 ; Alarm type
-Alarm_File:    4 ; File to be played
 Alarm_Acro:    1 ; Alarm is height above bottom of acro window
 
 ; 3000 ft
 Alarm_Elev:  914 ; Alarm elevation (m above ground level)
 Alarm_Type:    4 ; Alarm type
 Alarm_File:    3 ; File to be played
-Alarm_Acro:    1 ; Alarm is height above bottom of acro window
-
-; 2000 ft
-Alarm_Elev:  610 ; Alarm elevation (m above ground level)
-Alarm_Type:    4 ; Alarm type
-Alarm_File:    2 ; File to be played
 Alarm_Acro:    1 ; Alarm is height above bottom of acro window
 
 ; 1000 ft
