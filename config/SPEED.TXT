@@ -12,11 +12,11 @@ Mode:      0     ; Measurement mode
                  ;   3 = Inverse glide ratio
                  ;   4 = Total speed
                  ;   11 = Dive angle
-Min:       3000  ; Lowest pitch value
+Min:       6944  ; Lowest pitch value
                  ;   cm/s        in Mode 0, 1, or 4
                  ;   ratio * 100 in Mode 2 or 3
                  ;   degrees     in Mode 11
-Max:       9000  ; Highest pitch value
+Max:       9722  ; Highest pitch value
                  ;   cm/s        in Mode 0, 1, or 4
                  ;   ratio * 100 in Mode 2 or 3
                  ;   degrees     in Mode 11
@@ -45,7 +45,7 @@ Max_Val_2: 1500  ; Highest rate value
 
 ; Speech settings
 
-Sp_Rate:   7     ; Speech rate (s)
+Sp_Rate:   5     ; Speech rate (s)
                  ;   0 = No speech
 Sp_Volume: 8     ; 0 (min) to 8 (max)
 
@@ -112,7 +112,6 @@ Alarm_File:    2 ; File to be played
 Alarm_Elev: 2600 ; Alarm elevation (m above ground level)
 Alarm_Type:    4 ; Alarm type
 Alarm_File:    1 ; File to be played
-
 
 Alarm_Elev: 2500 ; Alarm elevation (m above ground level)
 Alarm_Type:    2 ; Alarm type
