@@ -17,8 +17,8 @@ function print_help() {
 TEMP=$( \
     getopt \
         -n $(basename "$0") \
-        -o hd: \
-        --long help,device: \
+        -o hd:m \
+        --long help,device:,mount \
         -- "$@"
     )
 
@@ -26,9 +26,11 @@ if [ $? != 0 ]; then echo "Terminating..." >&2; exit 1; fi
 
 eval set -- "$TEMP"
 
+mount=true
 while true; do
     case "$1" in
         -d|--device)    device="$2"             ; shift 2   ;;
+        -m|--mount)     mount=false             ; shift     ;;
         -h|--help)      print_help              ; exit 0    ;;
         --)             shift                   ; break     ;;
         *)              echo "Internal error!"  ; exit 1    ;;
@@ -46,8 +48,12 @@ set -x
 
 cd "${DIR}"
 
-sudo mount "$device" "$dest"
+if $mount; then
+    sudo mount "$device" "$dest"
+fi
 for fn in CONFIG.TXT config/*; do
     git diff --no-index "$dest/$fn" "$fn" || true
 done
-sudo umount "$dest"
+if $mount; then
+    sudo umount "$dest"
+fi

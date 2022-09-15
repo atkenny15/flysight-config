@@ -18,8 +18,8 @@ function print_help() {
 TEMP=$( \
     getopt \
         -n $(basename "$0") \
-        -o hnd: \
-        --long help,dry-run,device: \
+        -o hnd:m \
+        --long help,dry-run,device:,mount \
         -- "$@"
     )
 
@@ -28,10 +28,12 @@ if [ $? != 0 ]; then echo "Terminating..." >&2; exit 1; fi
 eval set -- "$TEMP"
 
 dry_run=
+mount=true
 while true; do
     case "$1" in
         -d|--device)    device="$2"             ; shift 2   ;;
         -n|--dry-run)   dry_run="--dry-run"     ; shift     ;;
+        -m|--mount)     mount=false             ; shift     ;;
         -h|--help)      print_help              ; exit 0    ;;
         --)             shift                   ; break     ;;
         *)              echo "Internal error!"  ; exit 1    ;;
@@ -49,6 +51,10 @@ set -x
 
 cd "${DIR}"
 
-sudo mount -o umask=000 "$device" "$dest"
+if $mount; then
+    sudo mount -o umask=000 "$device" "$dest"
+fi
 sudo rsync -iva $dry_run --progress --stats --no-o --no-g --no-p CONFIG.TXT config "$dest/"
-sudo umount "$dest"
+if $mount; then
+    sudo umount "$dest"
+fi
