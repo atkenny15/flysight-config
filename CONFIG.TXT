@@ -40,11 +40,57 @@ H_Thresh:  0     ; Minimum horizontal speed for tone (cm/s)
 
 ; Acro settings
 
-Acro_Win:           -1   ; Acro window, meters below exit (negative to disable exit detection)
+Acro_Win:           -1   ; Acro window, meters below exit
+
+; Exit detection
+
+Exit_Min_Alt:       -1   ; Do not detect an exit if below this altitude in meters
+                         ; (negative to disable exit detection)
+Exit_Exit_Alt:      -1   ; Do not detect an exit if above this altitude in meters
+                         ; (negative to disable this check)
 Exit_Num_Down:      5    ; Consecutive points down to indicate an exit
 Exit_Num_Up:        50   ; Consecutive points up reset the exit altitude
-Exit_Down_Thresh:   800  ; Speed to indicate travelling downwards (initialize exit altitude)
-Exit_Up_Thresh:     -800 ; Speed to indicate travelling upwards (reset exit altitude)
+Exit_Down_Thresh:   800  ; Speed (cm/s) to indicate down (positive) (initialize exit altitude)
+Exit_Up_Thresh:     -800 ; Speed (cm/s) to indicate up (negative) (reset exit altitude)
+
+; Performance lane
+
+Lane_Width:          600 ; Width of lane in meters
+Lane_Num_LEDs:        14 ; Number of leds for lane indicator
+Lane_LED_Offset:       3 ; First LED in display
+Time_After_Exit:      -1 ; Lane start time after ext (ms) (negative to disable)
+Reference_Lat:         0 ; Reference latitude (deg * 1e7)
+Reference_Lon:         0 ; Reference longitude (deg * 1e7)
+
+; Enable Performance lane
+
+Exit_Min_Alt:        2286 ; Do not detect an exit if below this altitude in meters
+Exit_Exit_Alt:       3353 ; Do not detect an exit if above this altitude in meters
+Time_After_Exit:    10000 ; Lane start time after ext (ms) (negative to disable)
+
+; ref_name: spa_landmark
+;Reference_Lat:  411356638
+;Reference_Lon: -801792178
+
+; ref_name: spa_golf_club
+;Reference_Lat:  411483570
+;Reference_Lon: -801145873
+
+; ref_name: spa_79_208
+;Reference_Lat:  411434277
+;Reference_Lon: -801550677
+
+; ref_name: cle_left
+Reference_Lat:  413471619
+Reference_Lon: -811011613
+
+; ref_name: cle_right
+;Reference_Lat:  413555117
+;Reference_Lon: -810885771
+
+; ref_name: love_test
+;Reference_Lat:  404224973
+;Reference_Lon: -799031880
 
 ; Miscellaneous
 
