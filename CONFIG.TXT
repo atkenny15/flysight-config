@@ -40,11 +40,26 @@ H_Thresh:  0     ; Minimum horizontal speed for tone (cm/s)
 
 ; Acro settings
 
-Acro_Win:           -1   ; Acro window, meters below exit (negative to disable exit detection)
+Acro_Win:           -1   ; Acro window, meters below exit
+
+; Exit detection
+
+Exit_Min_Alt:       -1   ; Do not detect an exit if below this altitude in meters
+                         ; (negative to disable exit detection)
+Exit_Exit_Alt:      -1   ; Do not detect an exit if above this altitude in meters
+                         ; (negative to disable this check)
 Exit_Num_Down:      5    ; Consecutive points down to indicate an exit
 Exit_Num_Up:        50   ; Consecutive points up reset the exit altitude
-Exit_Down_Thresh:   800  ; Speed to indicate travelling downwards (initialize exit altitude)
-Exit_Up_Thresh:     -800 ; Speed to indicate travelling upwards (reset exit altitude)
+Exit_Down_Thresh:   800  ; Speed (cm/s) to indicate down (positive) (initialize exit altitude)
+Exit_Up_Thresh:     -800 ; Speed (cm/s) to indicate up (negative) (reset exit altitude)
+
+; Performance lane
+
+41.38337668792488, -88.81675361439896
+
+Time_After_Exit:   10000 ; Lane start time after ext (ms) (negative to disable)
+Reference_Lat: 413833766 ; Reference latitude (deg * 1e7)
+Reference_Lon: -888167536 ; Reference longitude (deg * 1e7)
 
 ; Miscellaneous
 

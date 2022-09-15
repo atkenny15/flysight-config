@@ -73,10 +73,8 @@ H_Thresh:  11111 ; Minimum horizontal speed for tone (cm/s)
 ; Acro settings
 
 Acro_Win:           2286 ; Acro window, meters below exit (negative to disable exit detection)
-Exit_Num_Down:      5    ; Consecutive points down to indicate an exit
-Exit_Num_Up:        50   ; Consecutive points up reset the exit altitude
-Exit_Down_Thresh:   800  ; Speed to indicate travelling downwards (initialize exit altitude)
-Exit_Up_Thresh:     -800 ; Speed to indicate travelling upwards (reset exit altitude)
+Exit_Min_Alt:       2286 ; Do not detect an exit if below this altitude in meters
+                         ; (negative to disable exit detection)
 
 ; Initialization
 
