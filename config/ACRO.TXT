@@ -72,7 +72,7 @@ H_Thresh:  11111 ; Minimum horizontal speed for tone (cm/s)
 
 ; Acro settings
 
-Acro_Win:           2286 ; Acro window, meters below exit (negative to disable exit detection)
+Acro_Win:           2286 ; Acro window, meters below exit
 Exit_Min_Alt:       2286 ; Do not detect an exit if below this altitude in meters
                          ; (negative to disable exit detection)
 
