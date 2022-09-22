@@ -55,8 +55,16 @@ Exit_Up_Thresh:     -800 ; Speed (cm/s) to indicate up (negative) (reset exit al
 
 ; Performance lane
 
-Time_After_Exit:   10000 ; Lane start time after ext (ms) (negative to disable)
-Reference_Lat: 413833766 ; Reference latitude (deg * 1e7)
+Time_After_Exit:      -1 ; Lane start time after ext (ms) (negative to disable)
+Reference_Lat:         0 ; Reference latitude (deg * 1e7)
+Reference_Lon:         0 ; Reference longitude (deg * 1e7)
+
+; Enable Performance lane
+
+Exit_Min_Alt:        2286 ; Do not detect an exit if below this altitude in meters
+Exit_Exit_Alt:       3353 ; Do not detect an exit if above this altitude in meters
+Time_After_Exit:    10000 ; Lane start time after ext (ms) (negative to disable)
+Reference_Lat:  413833766 ; Reference latitude (deg * 1e7)
 Reference_Lon: -888167536 ; Reference longitude (deg * 1e7)
 
 ; Miscellaneous
