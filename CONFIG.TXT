@@ -64,6 +64,8 @@ Reference_Lon:         0 ; Reference longitude (deg * 1e7)
 Exit_Min_Alt:        2286 ; Do not detect an exit if below this altitude in meters
 Exit_Exit_Alt:       3353 ; Do not detect an exit if above this altitude in meters
 Time_After_Exit:    10000 ; Lane start time after ext (ms) (negative to disable)
+
+; ref_name: landmark
 Reference_Lat:  413833766 ; Reference latitude (deg * 1e7)
 Reference_Lon: -888167536 ; Reference longitude (deg * 1e7)
 
