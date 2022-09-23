@@ -10,6 +10,7 @@ function print_help() {
     echo ""
     echo "Options:"
     echo "  -d, --device=DEV    flysight device ($device)"
+    echo "  -m, --mount         skip mount/umount"
     echo "      --dest=PATH     destination directory ($dest)"
     echo "  -h, --help          display this help info"
 }
