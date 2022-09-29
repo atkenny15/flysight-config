@@ -55,6 +55,9 @@ Exit_Up_Thresh:     -800 ; Speed (cm/s) to indicate up (negative) (reset exit al
 
 ; Performance lane
 
+Lane_Width:          600 ; Width of lane in meters
+Lane_Num_LEDs:        15 ; Number of leds for lane indicator
+Lane_LED_Offset:       0 ; First LED in display
 Time_After_Exit:      -1 ; Lane start time after ext (ms) (negative to disable)
 Reference_Lat:         0 ; Reference latitude (deg * 1e7)
 Reference_Lon:         0 ; Reference longitude (deg * 1e7)
@@ -66,8 +69,12 @@ Exit_Exit_Alt:       3353 ; Do not detect an exit if above this altitude in mete
 Time_After_Exit:    10000 ; Lane start time after ext (ms) (negative to disable)
 
 ; ref_name: landmark
-Reference_Lat:  411358468
-Reference_Lon: -801791830
+;Reference_Lat:  411356638
+;Reference_Lon: -801792178
+
+; ref_name: spa_golf_club
+Reference_Lat:  411483570
+Reference_Lon: -801145873
 
 ; Miscellaneous
 
