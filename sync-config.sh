@@ -54,7 +54,7 @@ cd "${DIR}"
 if $mount; then
     sudo mount -o umask=000 "$device" "$dest"
 fi
-sudo rsync -iva $dry_run --progress --stats --no-o --no-g --no-p CONFIG.TXT config "$dest/"
+rsync -iva $dry_run --progress --stats --no-o --no-g --no-p CONFIG.TXT config "$dest/"
 if $mount; then
     sudo umount "$dest"
 fi
