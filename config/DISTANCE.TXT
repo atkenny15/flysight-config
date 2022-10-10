@@ -16,7 +16,7 @@ Min:       300   ; Lowest pitch value
                  ;   cm/s        in Mode 0, 1, or 4
                  ;   ratio * 100 in Mode 2 or 3
                  ;   degrees     in Mode 11
-Max:       380   ; Highest pitch value
+Max:       360   ; Highest pitch value
                  ;   cm/s        in Mode 0, 1, or 4
                  ;   ratio * 100 in Mode 2 or 3
                  ;   degrees     in Mode 11
