@@ -68,29 +68,21 @@ Exit_Min_Alt:        2286 ; Do not detect an exit if below this altitude in mete
 Exit_Exit_Alt:       3353 ; Do not detect an exit if above this altitude in meters
 Time_After_Exit:    10000 ; Lane start time after ext (ms) (negative to disable)
 
-; ref_name: spa_landmark
-;Reference_Lat:  411356638
-;Reference_Lon: -801792178
+; ref_name: e2w_1
+;Reference_Lat:  326544880
+;Reference_Lon: -1116945340
 
-; ref_name: spa_golf_club
-;Reference_Lat:  411483570
-;Reference_Lon: -801145873
+; ref_name: e2w_2
+Reference_Lat:  326607750
+Reference_Lon: -1116878820
 
-; ref_name: spa_79_208
-;Reference_Lat:  411434277
-;Reference_Lon: -801550677
+; ref_name: e2w_3
+;Reference_Lat:  326679640
+;Reference_Lon: -1116917020
 
-; ref_name: cle_left
-Reference_Lat:  413471619
-Reference_Lon: -811011613
-
-; ref_name: cle_right
-;Reference_Lat:  413555117
-;Reference_Lon: -810885771
-
-; ref_name: love_test
-;Reference_Lat:  404224973
-;Reference_Lon: -799031880
+; ref_name: e2w_4
+;Reference_Lat:  326753700
+;Reference_Lon: -1116887830
 
 ; Miscellaneous
 
