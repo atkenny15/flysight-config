@@ -11,6 +11,7 @@ function print_help() {
     echo "Options:"
     echo "  -d, --device=DEV    flysight device ($device)"
     echo "      --dest=PATH     destination directory ($dest)"
+    echo "  -m, --mount         skip mount/umount"
     echo "  -n, --dry-run       dry run"
     echo "  -h, --help          display this help info"
 }
@@ -54,6 +55,7 @@ cd "${DIR}"
 if $mount; then
     sudo mount -o umask=000 "$device" "$dest"
 fi
+cat "$dest/FLYSIGHT.TXT"
 rsync -iva $dry_run --progress --stats --no-o --no-g --no-p CONFIG.TXT config "$dest/"
 if $mount; then
     sudo umount "$dest"
