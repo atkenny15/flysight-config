@@ -65,24 +65,24 @@ Reference_Lon:         0 ; Reference longitude (deg * 1e7)
 ; Enable Performance lane
 
 Exit_Min_Alt:        2286 ; Do not detect an exit if below this altitude in meters
-Exit_Exit_Alt:       3353 ; Do not detect an exit if above this altitude in meters
+Exit_Exit_Alt:         -1 ; Do not detect an exit if above this altitude in meters
 Time_After_Exit:    10000 ; Lane start time after ext (ms) (negative to disable)
 
-; ref_name: e2w_1
-;Reference_Lat:  326544880
-;Reference_Lon: -1116945340
+; ref_name: s2n_1
+;Reference_Lat:   326680550
+;Reference_Lon: -1116970660
 
-; ref_name: e2w_2
-Reference_Lat:  326607750
-Reference_Lon: -1116878820
+; ref_name: s2n_2
+;Reference_Lat:   326648030
+;Reference_Lon: -1116883540
 
-; ref_name: e2w_3
-;Reference_Lat:  326679640
-;Reference_Lon: -1116917020
+; ref_name: s2n_3
+;Reference_Lat:   326707820
+;Reference_Lon: -1116804790
 
-; ref_name: e2w_4
-;Reference_Lat:  326753700
-;Reference_Lon: -1116887830
+; ref_name: s2n_4
+;Reference_Lat:   326691750
+;Reference_Lon: -1116722180
 
 ; Miscellaneous
 
