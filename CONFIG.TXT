@@ -68,33 +68,9 @@ Exit_Min_Alt:        2286 ; Do not detect an exit if below this altitude in mete
 Exit_Exit_Alt:       3353 ; Do not detect an exit if above this altitude in meters
 Time_After_Exit:    10000 ; Lane start time after ext (ms) (negative to disable)
 
-; ref_name: s2n_1
-;Reference_Lat:  326680550
-;Reference_Lon: -1116970660
-
-; ref_name: s2n_2
-;Reference_Lat:  326648030
-;Reference_Lon: -1116883540
-
-; ref_name: s2n_3
-;Reference_Lat:  326707820
-;Reference_Lon: -1116804790
-
-; ref_name: s2n_4
-;Reference_Lat:  326691750
-;Reference_Lon: -1116722180
-
-; ref_name: spa_fbo
-;Reference_Lat:  411449087
-;Reference_Lon: -801676433
-
-; ref_name: spa_landmark
-;Reference_Lat:  411359021
-;Reference_Lon: -801791902
-
-; ref_name: runway
-Reference_Lat:  411458368
-Reference_Lon: -801604920
+; ref_name: north_field
+Reference_LatF: 41.14145810667507
+Reference_LonF: -80.18958932183187
 
 ; Miscellaneous
 
@@ -156,3 +132,35 @@ Alt_Units:     1 ; Altitude units
                  ;   1 = ft
 Alt_Step:      0 ; Altitude between announcements
                  ;   0 = No altitude
+
+Wind_hMSL:    1336687 ; 918.687 (m agl)
+Wind_velE:       9177 ; 33.038 (kmph)
+Wind_velN:       3673 ; 13.224 (kmph)
+
+Wind_hMSL:    1643127 ; 1225.128 (m agl)
+Wind_velE:       9909 ; 35.676 (kmph)
+Wind_velN:       2602 ; 9.367 (kmph)
+
+Wind_hMSL:    1991449 ; 1573.449 (m agl)
+Wind_velE:      10592 ; 38.131 (kmph)
+Wind_velN:       1336 ; 4.810 (kmph)
+
+Wind_hMSL:    2386075 ; 1968.076 (m agl)
+Wind_velE:      12213 ; 43.970 (kmph)
+Wind_velN:        790 ; 2.847 (kmph)
+
+Wind_hMSL:    2832282 ; 2414.283 (m agl)
+Wind_velE:      14124 ; 50.847 (kmph)
+Wind_velN:       1145 ; 4.126 (kmph)
+
+Wind_hMSL:    3336756 ; 2918.756 (m agl)
+Wind_velE:      15877 ; 57.159 (kmph)
+Wind_velN:       1725 ; 6.213 (kmph)
+
+Wind_hMSL:    3906311 ; 3488.312 (m agl)
+Wind_velE:      16723 ; 60.205 (kmph)
+Wind_velN:       1625 ; 5.850 (kmph)
+
+Wind_hMSL:    4533619 ; 4115.620 (m agl)
+Wind_velE:      16788 ; 60.439 (kmph)
+Wind_velN:        989 ; 3.564 (kmph)
