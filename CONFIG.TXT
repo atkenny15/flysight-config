@@ -107,8 +107,8 @@ Init_File: 0     ; File to be played
 
 Win_Above:    20 ; Window above each alarm (m)
 Win_Below:    20 ; Window below each alarm (m)
-DZ_Elev:     418 ; Ground elevation (m above sea level) - Skydive Pennsylvania
-;DZ_Elev:     338 ; Ground elevation (m above sea level) - Cleveland Skydiving Center
+;DZ_Elev:     418 ; Ground elevation (m above sea level) - Skydive Pennsylvania
+DZ_Elev:     338 ; Ground elevation (m above sea level) - Cleveland Skydiving Center
 ;DZ_Elev:     472 ; Ground elevation (m above sea level) - Sawtooth
 ;DZ_Elev:     24 ; Ground elevation (m above sea level) - Skydive Deland
 ;DZ_Elev:     188 ; Ground elevation (m above sea level) - Skydive Chicago
@@ -133,34 +133,38 @@ Alt_Units:     1 ; Altitude units
 Alt_Step:      0 ; Altitude between announcements
                  ;   0 = No altitude
 
-Wind_hMSL:    1336687 ; 918.687 (m agl)
-Wind_velE:       9177 ; 33.038 (kmph)
-Wind_velN:       3673 ; 13.224 (kmph)
+Wind_hMSL:    1437903 ; 1019.903 (m agl)
+Wind_velE:        766 ; 2.758 (kmph)
+Wind_velN:      -3105 ; -11.181 (kmph)
 
-Wind_hMSL:    1643127 ; 1225.128 (m agl)
-Wind_velE:       9909 ; 35.676 (kmph)
-Wind_velN:       2602 ; 9.367 (kmph)
+Wind_hMSL:    1699413 ; 1281.414 (m agl)
+Wind_velE:        925 ; 3.331 (kmph)
+Wind_velN:      -3350 ; -12.060 (kmph)
 
-Wind_hMSL:    1991449 ; 1573.449 (m agl)
-Wind_velE:      10592 ; 38.131 (kmph)
-Wind_velN:       1336 ; 4.810 (kmph)
+Wind_hMSL:    1995381 ; 1577.381 (m agl)
+Wind_velE:       1215 ; 4.377 (kmph)
+Wind_velN:      -3821 ; -13.758 (kmph)
 
-Wind_hMSL:    2386075 ; 1968.076 (m agl)
-Wind_velE:      12213 ; 43.970 (kmph)
-Wind_velN:        790 ; 2.847 (kmph)
+Wind_hMSL:    2328904 ; 1910.904 (m agl)
+Wind_velE:       1390 ; 5.007 (kmph)
+Wind_velN:      -4003 ; -14.414 (kmph)
 
-Wind_hMSL:    2832282 ; 2414.283 (m agl)
-Wind_velE:      14124 ; 50.847 (kmph)
-Wind_velN:       1145 ; 4.126 (kmph)
+Wind_hMSL:    2704973 ; 2286.974 (m agl)
+Wind_velE:       3458 ; 12.449 (kmph)
+Wind_velN:      -6972 ; -25.100 (kmph)
 
-Wind_hMSL:    3336756 ; 2918.756 (m agl)
-Wind_velE:      15877 ; 57.159 (kmph)
-Wind_velN:       1725 ; 6.213 (kmph)
+Wind_hMSL:    3129816 ; 2711.816 (m agl)
+Wind_velE:       6369 ; 22.931 (kmph)
+Wind_velN:     -12524 ; -45.090 (kmph)
 
-Wind_hMSL:    3906311 ; 3488.312 (m agl)
-Wind_velE:      16723 ; 60.205 (kmph)
-Wind_velN:       1625 ; 5.850 (kmph)
+Wind_hMSL:    3609171 ; 3191.172 (m agl)
+Wind_velE:       8043 ; 28.957 (kmph)
+Wind_velN:     -14464 ; -52.073 (kmph)
 
-Wind_hMSL:    4533619 ; 4115.620 (m agl)
-Wind_velE:      16788 ; 60.439 (kmph)
-Wind_velN:        989 ; 3.564 (kmph)
+Wind_hMSL:    4148089 ; 3730.089 (m agl)
+Wind_velE:       9259 ; 33.334 (kmph)
+Wind_velN:     -14572 ; -52.461 (kmph)
+
+Wind_hMSL:    4740426 ; 4322.426 (m agl)
+Wind_velE:       9847 ; 35.449 (kmph)
+Wind_velN:     -14703 ; -52.933 (kmph)
