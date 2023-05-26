@@ -59,8 +59,8 @@ Lane_Width:          600 ; Width of lane in meters
 Lane_Num_LEDs:        14 ; Number of leds for lane indicator
 Lane_LED_Offset:       3 ; First LED in display
 Time_After_Exit:      -1 ; Lane start time after ext (ms) (negative to disable)
-Reference_Lat:         0 ; Reference latitude (deg * 1e7)
-Reference_Lon:         0 ; Reference longitude (deg * 1e7)
+Reference_LatF:      0.0 ; Reference latitude (deg)
+Reference_LonF:      0.0 ; Reference longitude (deg)
 
 ; Enable Performance lane
 
