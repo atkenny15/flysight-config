@@ -3,26 +3,21 @@
 import argparse
 import re
 import shlex
-import subprocess
 import sys
 
 from typing import List
 
+from common import mount_device, get_mount_destination, run_command, unmount_device
+
 
 def main(argv: List[str]) -> None:
-    parser = argparse.ArgumentParser(description="Template")
+    parser = argparse.ArgumentParser(description="Sync flysight configs to device")
     parser.add_argument(
         "--device",
         "-d",
         default="/dev/sdb1",
         type=str,
         help="flysight device",
-    )
-    parser.add_argument(
-        "--dest",
-        default="/mnt/temp1",
-        type=str,
-        help="destination directory",
     )
     parser.add_argument(
         "--mount",
@@ -44,16 +39,18 @@ def main(argv: List[str]) -> None:
     if args.dry_run:
         dry_run = "--dry-run"
 
+    mount_dest = None
     if not args.mount:
-        run_command(
-            shlex.split(f"sudo mount -o umask=000 '{args.device}' '{args.dest}'")
-        )
+        mount_dest = mount_device(args.device)
+
+    if mount_dest is None:
+        mount_dest = get_mount_destination()
 
     try:
         rx = re.compile("^Firmware version: ([\w-]+)\s*$")
 
         fw_ver = None
-        with open(f"{args.dest}/FLYSIGHT.TXT") as fh:
+        with mount_dest.joinpath("FLYSIGHT.TXT").open() as fh:
             for line in fh:
                 print(line.rstrip())
                 matches = rx.search(line)
@@ -72,17 +69,12 @@ def main(argv: List[str]) -> None:
 
         run_command(
             shlex.split(
-                f"rsync -iva {dry_run} --progress --stats --no-o --no-g --no-p CONFIG.TXT config '{args.dest}/'"
+                f"rsync -iva {dry_run} --progress --stats --no-o --no-g --no-p CONFIG.TXT config '{mount_dest}/'"
             )
         )
     finally:
         if not args.mount:
-            run_command(shlex.split(f"sudo umount '{args.dest}'"))
-
-
-def run_command(cmd: List[str]):
-    print(shlex.join(cmd))
-    subprocess.run(cmd, check=True)
+            unmount_device(args.device)
 
 
 def config_is_perf() -> bool:
