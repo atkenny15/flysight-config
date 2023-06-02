@@ -108,7 +108,8 @@ Init_File: 0     ; File to be played
 Win_Above:    20 ; Window above each alarm (m)
 Win_Below:    20 ; Window below each alarm (m)
 ;DZ_Elev:     418 ; Ground elevation (m above sea level) - Skydive Pennsylvania
-DZ_Elev:     338 ; Ground elevation (m above sea level) - Cleveland Skydiving Center
+;DZ_Elev:     338 ; Ground elevation (m above sea level) - Cleveland Skydiving Center
+DZ_Elev:     238 ; Ground elevation (m above sea level) - Chicagoland Skydiving Center
 ;DZ_Elev:     472 ; Ground elevation (m above sea level) - Sawtooth
 ;DZ_Elev:     24 ; Ground elevation (m above sea level) - Skydive Deland
 ;DZ_Elev:     188 ; Ground elevation (m above sea level) - Skydive Chicago
@@ -132,39 +133,3 @@ Alt_Units:     1 ; Altitude units
                  ;   1 = ft
 Alt_Step:      0 ; Altitude between announcements
                  ;   0 = No altitude
-
-Wind_hMSL:    1442973 ; 1104.973 (m agl)
-Wind_velE:      -1187 ; -4.274 (kmph)
-Wind_velN:      -2277 ; -8.199 (kmph)
-
-Wind_hMSL:    1706684 ; 1368.685 (m agl)
-Wind_velE:        405 ; 1.460 (kmph)
-Wind_velN:      -1549 ; -5.579 (kmph)
-
-Wind_hMSL:    2005427 ; 1667.428 (m agl)
-Wind_velE:       2363 ; 8.508 (kmph)
-Wind_velN:      -2205 ; -7.940 (kmph)
-
-Wind_hMSL:    2342640 ; 2004.641 (m agl)
-Wind_velE:       4432 ; 15.959 (kmph)
-Wind_velN:      -4315 ; -15.535 (kmph)
-
-Wind_hMSL:    2723060 ; 2385.060 (m agl)
-Wind_velE:       5684 ; 20.465 (kmph)
-Wind_velN:      -6516 ; -23.458 (kmph)
-
-Wind_hMSL:    3151026 ; 2813.027 (m agl)
-Wind_velE:       4984 ; 17.945 (kmph)
-Wind_velN:      -8699 ; -31.319 (kmph)
-
-Wind_hMSL:    3632811 ; 3294.811 (m agl)
-Wind_velE:       4702 ; 16.928 (kmph)
-Wind_velN:     -12242 ; -44.071 (kmph)
-
-Wind_hMSL:    4175908 ; 3837.909 (m agl)
-Wind_velE:       6610 ; 23.797 (kmph)
-Wind_velN:     -14750 ; -53.103 (kmph)
-
-Wind_hMSL:    4775551 ; 4437.551 (m agl)
-Wind_velE:       7518 ; 27.067 (kmph)
-Wind_velN:     -16831 ; -60.592 (kmph)
