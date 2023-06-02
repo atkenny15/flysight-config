@@ -141,8 +141,8 @@ def main(argv: List[str]) -> None:
                     add = [
                         "",
                         f"; ref_name: {args.name}",
-                        f"Reference_Lat: {lat:10}",
-                        f"Reference_Lon: {lon:10}",
+                        f"Reference_LatF: {lat}",
+                        f"Reference_LonF: {lon}",
                     ]
                     print("\n".join(add))
                     new_lines.extend(add)

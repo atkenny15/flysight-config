@@ -69,8 +69,12 @@ Exit_Exit_Alt:       3353 ; Do not detect an exit if above this altitude in mete
 Time_After_Exit:    10000 ; Lane start time after ext (ms) (negative to disable)
 
 ; ref_name: north_field
-Reference_LatF: 41.34487570743812
-Reference_LonF: -81.1075951288089
+;Reference_LatF: 41.34487570743812
+;Reference_LonF: -81.1075951288089
+
+; ref_name: csc_peas
+Reference_LatF: 41.893220542967015
+Reference_LonF: -89.07390134292409
 
 ; Miscellaneous
 
