@@ -47,7 +47,7 @@ Max_Val_2: 1500  ; Highest rate value
 
 Sp_Rate:   5     ; Speech rate (s)
                  ;   0 = No speech
-Sp_Volume: 8     ; 0 (min) to 8 (max)
+Sp_Volume: 7     ; 0 (min) to 8 (max)
 
 Sp_Mode:   0     ; Speech mode
                  ;   0 = Horizontal speed
