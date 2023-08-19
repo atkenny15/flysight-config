@@ -68,9 +68,17 @@ Exit_Min_Alt:        2286 ; Do not detect an exit if below this altitude in mete
 Exit_Exit_Alt:       3353 ; Do not detect an exit if above this altitude in meters
 Time_After_Exit:    10000 ; Lane start time after ext (ms) (negative to disable)
 
-; ref_name: cleveland
-Reference_LatF: 41.345287659094325
-Reference_LonF: -81.10344435748922
+; ref_name: cleveland_left
+;Reference_LatF: 41.34489729015465
+;Reference_LonF: -81.10756889081085
+
+; ref_name: cleveland_right
+Reference_LatF: 41.35491896362001
+Reference_LonF: -81.0800531194001
+
+; ref_name: sdc_south
+;Reference_LatF: 41.376474582487575
+;Reference_LonF: -88.81678092016752
 
 ; Miscellaneous
 
@@ -133,3 +141,35 @@ Alt_Units:     1 ; Altitude units
                  ;   1 = ft
 Alt_Step:      0 ; Altitude between announcements
                  ;   0 = No altitude
+
+Wind_hMSL:    1443150 ; 1105.151 (m agl)
+Wind_velE:        521 ; 18.772 (kmph)
+Wind_velN:       -147 ; -5.299 (kmph)
+
+Wind_hMSL:    1713017 ; 1375.018 (m agl)
+Wind_velE:        397 ; 14.322 (kmph)
+Wind_velN:       -490 ; -17.673 (kmph)
+
+Wind_hMSL:    2021645 ; 1683.645 (m agl)
+Wind_velE:        400 ; 14.436 (kmph)
+Wind_velN:       -754 ; -27.179 (kmph)
+
+Wind_hMSL:    2371861 ; 2033.861 (m agl)
+Wind_velE:        611 ; 22.010 (kmph)
+Wind_velN:       -898 ; -32.338 (kmph)
+
+Wind_hMSL:    2767423 ; 2429.423 (m agl)
+Wind_velE:        810 ; 29.190 (kmph)
+Wind_velN:       -947 ; -34.119 (kmph)
+
+Wind_hMSL:    3214504 ; 2876.505 (m agl)
+Wind_velE:        867 ; 31.227 (kmph)
+Wind_velN:      -1035 ; -37.267 (kmph)
+
+Wind_hMSL:    3720208 ; 3382.208 (m agl)
+Wind_velE:        851 ; 30.671 (kmph)
+Wind_velN:      -1131 ; -40.747 (kmph)
+
+Wind_hMSL:    4291173 ; 3953.174 (m agl)
+Wind_velE:        981 ; 35.343 (kmph)
+Wind_velN:      -1203 ; -43.320 (kmph)

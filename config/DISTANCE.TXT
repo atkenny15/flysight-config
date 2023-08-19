@@ -16,7 +16,7 @@ Min:       300   ; Lowest pitch value
                  ;   cm/s        in Mode 0, 1, or 4
                  ;   ratio * 100 in Mode 2 or 3
                  ;   degrees     in Mode 11
-Max:       360   ; Highest pitch value
+Max:       380   ; Highest pitch value
                  ;   cm/s        in Mode 0, 1, or 4
                  ;   ratio * 100 in Mode 2 or 3
                  ;   degrees     in Mode 11
@@ -45,7 +45,7 @@ Max_Val_2: 1500  ; Highest rate value
 
 ; Speech settings
 
-Sp_Rate:   5     ; Speech rate (s)
+Sp_Rate:   3     ; Speech rate (s)
                  ;   0 = No speech
 Sp_Volume: 7     ; 0 (min) to 8 (max)
 
@@ -120,7 +120,7 @@ Alarm_File: flare; File to be played
 Alarm_Elev: 2500 ; Alarm elevation (m above ground level)
 Alarm_Type:    2 ; Alarm type
 
-Alarm_Elev: 1580 ; Alarm elevation (m above ground level)
+Alarm_Elev: 1560 ; Alarm elevation (m above ground level)
 Alarm_Type:    2 ; Alarm type
 
 Alarm_Elev: 1450; Alarm elevation (m above ground level)
@@ -134,7 +134,7 @@ Alarm_Type:    3 ; Alarm type
 ;          alarms will be audible.
 
 Win_Top:    3500 ; Silence window top (m)
-Win_Bottom: 2490 ; Silence window bottom (m)
+Win_Bottom: 2600 ; Silence window bottom (m)
 
 Win_Top:     600 ; Silence window top (m)
 Win_Bottom:    0 ; Silence window bottom (m)
