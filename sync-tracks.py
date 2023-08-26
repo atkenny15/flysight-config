@@ -41,6 +41,13 @@ def main(argv: List[str]) -> None:
         action="store_true",
         help="dry run",
     )
+    parser.add_argument(
+        "--source",
+        "-s",
+        default="2",
+        type=str,
+        help="source string to copy",
+    )
     args = parser.parse_args(argv)
 
     mount_dest = None
@@ -73,7 +80,7 @@ def main(argv: List[str]) -> None:
         if args.dry_run:
             dry_run = "--dry-run"
 
-        cmd = f'rsync {dry_run} --archive --verbose --partial --progress "{mount_dest}"/2* "{dest}/{serial_number}/"'
+        cmd = f'rsync {dry_run} --archive --verbose --partial --progress "{mount_dest}"/{args.source}* "{dest}/{serial_number}/"'
 
         display_file(flysight_text_path)
         print(cmd)
