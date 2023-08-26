@@ -69,8 +69,8 @@ Exit_Exit_Alt:       3353 ; Do not detect an exit if above this altitude in mete
 Time_After_Exit:    10000 ; Lane start time after ext (ms) (negative to disable)
 
 ; ref_name: cleveland_left
-Reference_LatF: 41.34489729015465
-Reference_LonF: -81.10756889081085
+Reference_LatF: 41.354900030222254
+Reference_LonF: -81.08000861940461
 
 ; ref_name: cleveland_right
 ;Reference_LatF: 41.35491896362001
