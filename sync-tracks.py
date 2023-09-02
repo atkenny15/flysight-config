@@ -9,7 +9,7 @@ import sys
 
 from typing import List
 
-from common import mount_device, get_mount_destination, run_command, unmount_device
+from common import mount_device, get_mount_destination, unmount_device
 
 
 def main(argv: List[str]) -> None:
@@ -58,13 +58,17 @@ def main(argv: List[str]) -> None:
         mount_dest = get_mount_destination()
 
     try:
-        rx = re.compile("^Processor serial number: (\w+)\s*$")
+        fs1_rx = re.compile("^Processor serial number: (\w+)\s*$")
+        fs2_rx = re.compile("^Device_ID:\s+(\w+)\s*$")
         flysight_text_path = mount_dest / "FLYSIGHT.TXT"
 
         serial_number = None
         with flysight_text_path.open() as fh:
             for line in fh:
-                matches = rx.search(line)
+                matches = fs1_rx.search(line)
+                if matches:
+                    serial_number = matches.group(1)
+                matches = fs2_rx.search(line)
                 if matches:
                     serial_number = matches.group(1)
 
