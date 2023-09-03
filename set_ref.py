@@ -46,7 +46,7 @@ def main(argv: List[str]) -> None:
 
     ref_rx = re.compile(";\s*ref_name\s*:\s+(?P<name>.+?)\s*$")
     lat_lon_rx = re.compile(
-        "^\s*(?P<disabled>;)?\s*Reference_(?P<lat_lon>Lat|Lon)F?\s*:\s*(?P<value>-?[\d.]+)(?:\s+.*?)?$"
+        "^\s*(?P<disabled>;)?\s*(?P<key>Num_Blink_LEDs|Reference_(?P<lat_lon>Lat|Lon)F?)\s*:\s*(?P<value>-?[\d.]+)(?:\s+.*?)?$"
     )
 
     found = False
@@ -90,19 +90,25 @@ def main(argv: List[str]) -> None:
                 if s == ";":
                     is_disabled = True
 
-                val = lat_lon_matches.group("value")
+                key = lat_lon_matches.group("key")
 
-                if name_match:
-                    if lat_lon_matches.group("lat_lon") == "Lat":
-                        if lat is not None:
-                            val = lat
-                    if lat_lon_matches.group("lat_lon") == "Lon":
-                        if lon is not None:
-                            val = lon
+                if key == "Num_Blink_LEDs":
+                    val = lat_lon_matches.group("value")
+                    temp = f"{s}{key}: {val}"
+                else:
+                    val = lat_lon_matches.group("value")
 
-                temp = "{}Reference_{}F: {}".format(
-                    s, lat_lon_matches.group("lat_lon"), val
-                )
+                    if name_match:
+                        if lat_lon_matches.group("lat_lon") == "Lat":
+                            if lat is not None:
+                                val = lat
+                        if lat_lon_matches.group("lat_lon") == "Lon":
+                            if lon is not None:
+                                val = lon
+
+                    temp = "{}Reference_{}F: {}".format(
+                        s, lat_lon_matches.group("lat_lon"), val
+                    )
                 new_lines.append(temp)
                 disp.append(temp)
 
