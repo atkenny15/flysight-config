@@ -72,5 +72,5 @@ Init_Mode: 2     ; When the FlySight is powered on
                  ;   2 = Play file
 Init_File: org   ; File to be played
 
-Win_Top:     600 ; Silence window top (m)
+Win_Top:    1067 ; Silence window top (m)
 Win_Bottom:    0 ; Silence window bottom (m)
