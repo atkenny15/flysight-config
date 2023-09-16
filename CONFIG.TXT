@@ -69,14 +69,14 @@ Exit_Exit_Alt:       3320 ; Do not detect an exit if above this altitude in mete
 Time_After_Exit:    10000 ; Lane start time after ext (ms) (negative to disable)
 
 ; ref_name: cleveland_left
-;Reference_LatF: 41.3452854482295
-;Reference_LonF: -81.10348313526546
-;Num_Blink_LEDs: 2
+Reference_LatF: 41.365576718670084
+Reference_LonF: -81.10826202451376
+Num_Blink_LEDs: 2
 
 ; ref_name: cleveland_right
-Reference_LatF: 41.360304357480004
-Reference_LonF: -81.0805121602778
-Num_Blink_LEDs: 1
+;Reference_LatF: 41.360304357480004
+;Reference_LonF: -81.0805121602778
+;Num_Blink_LEDs: 1
 
 ; Miscellaneous
 
@@ -140,34 +140,38 @@ Alt_Units:     1 ; Altitude units
 Alt_Step:      0 ; Altitude between announcements
                  ;   0 = No altitude
 
-Wind_hMSL:    1481962 ; 1143.962 (m agl)
-Wind_velE:        931 ; 33.523 (kmph)
-Wind_velN:        329 ; 11.870 (kmph)
+Wind_hMSL:    1441776 ; 1103.776 (m agl)
+Wind_velE:       -125 ; -4.501 (kmph)
+Wind_velN:       -109 ; -3.944 (kmph)
 
-Wind_hMSL:    1760495 ; 1422.495 (m agl)
-Wind_velE:        910 ; 32.765 (kmph)
-Wind_velN:       -158 ; -5.693 (kmph)
+Wind_hMSL:    1709936 ; 1371.936 (m agl)
+Wind_velE:       -121 ; -4.373 (kmph)
+Wind_velN:        -47 ; -1.716 (kmph)
 
-Wind_hMSL:    2077871 ; 1739.872 (m agl)
-Wind_velE:        773 ; 27.856 (kmph)
-Wind_velN:       -438 ; -15.802 (kmph)
+Wind_hMSL:    2016340 ; 1678.340 (m agl)
+Wind_velE:       -127 ; -4.593 (kmph)
+Wind_velN:        195 ; 7.023 (kmph)
 
-Wind_hMSL:    2436170 ; 2098.170 (m agl)
-Wind_velE:        784 ; 28.243 (kmph)
-Wind_velN:       -557 ; -20.083 (kmph)
+Wind_hMSL:    2364230 ; 2026.230 (m agl)
+Wind_velE:         -3 ; -0.136 (kmph)
+Wind_velN:        282 ; 10.164 (kmph)
 
-Wind_hMSL:    2838927 ; 2500.928 (m agl)
-Wind_velE:        685 ; 24.665 (kmph)
-Wind_velN:       -901 ; -32.447 (kmph)
+Wind_hMSL:    2756465 ; 2418.466 (m agl)
+Wind_velE:         70 ; 2.537 (kmph)
+Wind_velN:         73 ; 2.629 (kmph)
 
-Wind_hMSL:    3290703 ; 2952.703 (m agl)
-Wind_velE:        509 ; 18.334 (kmph)
-Wind_velN:      -1165 ; -41.965 (kmph)
+Wind_hMSL:    3198078 ; 2860.078 (m agl)
+Wind_velE:        150 ; 5.416 (kmph)
+Wind_velN:        -58 ; -2.116 (kmph)
 
-Wind_hMSL:    3798048 ; 3460.048 (m agl)
-Wind_velE:        191 ; 6.903 (kmph)
-Wind_velN:      -1123 ; -40.428 (kmph)
+Wind_hMSL:    3696124 ; 3358.125 (m agl)
+Wind_velE:        145 ; 5.220 (kmph)
+Wind_velN:        -34 ; -1.237 (kmph)
 
-Wind_hMSL:    4367572 ; 4029.572 (m agl)
-Wind_velE:        -47 ; -1.706 (kmph)
-Wind_velN:       -941 ; -33.890 (kmph)
+Wind_hMSL:    4258580 ; 3920.580 (m agl)
+Wind_velE:        116 ; 4.188 (kmph)
+Wind_velN:        -25 ; -0.902 (kmph)
+
+Wind_hMSL:    4878079 ; 4540.080 (m agl)
+Wind_velE:        163 ; 5.876 (kmph)
+Wind_velN:        -75 ; -2.723 (kmph)
