@@ -69,14 +69,19 @@ Exit_Exit_Alt:       3320 ; Do not detect an exit if above this altitude in mete
 Time_After_Exit:    10000 ; Lane start time after ext (ms) (negative to disable)
 
 ; ref_name: cleveland_left
-Reference_LatF: 41.365576718670084
-Reference_LonF: -81.10826202451376
-Num_Blink_LEDs: 2
+;Reference_LatF: 41.365576718670084
+;Reference_LonF: -81.10826202451376
+;Num_Blink_LEDs: 2
 
 ; ref_name: cleveland_right
 ;Reference_LatF: 41.360304357480004
 ;Reference_LonF: -81.0805121602778
 ;Num_Blink_LEDs: 1
+
+; ref_name: w2e_lane3
+Reference_LatF: 35.01599
+Reference_LonF: -79.19411
+Num_Blink_LEDs: 3
 
 ; Miscellaneous
 
@@ -114,11 +119,12 @@ Init_File: 0     ; File to be played
 Win_Above:    20 ; Window above each alarm (m)
 Win_Below:    20 ; Window below each alarm (m)
 ;DZ_Elev:     418 ; Ground elevation (m above sea level) - Skydive Pennsylvania
-DZ_Elev:     338 ; Ground elevation (m above sea level) - Cleveland Skydiving Center
+;DZ_Elev:     338 ; Ground elevation (m above sea level) - Cleveland Skydiving Center
 ;DZ_Elev:     238 ; Ground elevation (m above sea level) - Chicagoland Skydiving Center
 ;DZ_Elev:     472 ; Ground elevation (m above sea level) - Sawtooth
 ;DZ_Elev:     24 ; Ground elevation (m above sea level) - Skydive Deland
 ;DZ_Elev:     188 ; Ground elevation (m above sea level) - Skydive Chicago
+DZ_Elev:      93 ; Ground elevation (m above sea level) - Skydive Paraclete
 
 ; Altitude mode settings
 
@@ -140,38 +146,34 @@ Alt_Units:     1 ; Altitude units
 Alt_Step:      0 ; Altitude between announcements
                  ;   0 = No altitude
 
-Wind_hMSL:    1441776 ; 1103.776 (m agl)
-Wind_velE:       -125 ; -4.501 (kmph)
-Wind_velN:       -109 ; -3.944 (kmph)
+Wind_hMSL:    1211233 ; 1118.233 (m agl)
+Wind_velE:        304 ; 10.968 (kmph)
+Wind_velN:        163 ; 5.891 (kmph)
 
-Wind_hMSL:    1709936 ; 1371.936 (m agl)
-Wind_velE:       -121 ; -4.373 (kmph)
-Wind_velN:        -47 ; -1.716 (kmph)
+Wind_hMSL:    1492973 ; 1399.973 (m agl)
+Wind_velE:        324 ; 11.684 (kmph)
+Wind_velN:        142 ; 5.137 (kmph)
 
-Wind_hMSL:    2016340 ; 1678.340 (m agl)
-Wind_velE:       -127 ; -4.593 (kmph)
-Wind_velN:        195 ; 7.023 (kmph)
+Wind_hMSL:    1812522 ; 1719.522 (m agl)
+Wind_velE:        419 ; 15.101 (kmph)
+Wind_velN:         20 ; 0.740 (kmph)
 
-Wind_hMSL:    2364230 ; 2026.230 (m agl)
-Wind_velE:         -3 ; -0.136 (kmph)
-Wind_velN:        282 ; 10.164 (kmph)
+Wind_hMSL:    2172761 ; 2079.761 (m agl)
+Wind_velE:        452 ; 16.286 (kmph)
+Wind_velN:          4 ; 0.162 (kmph)
 
-Wind_hMSL:    2756465 ; 2418.466 (m agl)
-Wind_velE:         70 ; 2.537 (kmph)
-Wind_velN:         73 ; 2.629 (kmph)
+Wind_hMSL:    2579161 ; 2486.162 (m agl)
+Wind_velE:        568 ; 20.462 (kmph)
+Wind_velN:         57 ; 2.081 (kmph)
 
-Wind_hMSL:    3198078 ; 2860.078 (m agl)
-Wind_velE:        150 ; 5.416 (kmph)
-Wind_velN:        -58 ; -2.116 (kmph)
+Wind_hMSL:    3039174 ; 2946.175 (m agl)
+Wind_velE:        916 ; 32.990 (kmph)
+Wind_velN:        262 ; 9.463 (kmph)
 
-Wind_hMSL:    3696124 ; 3358.125 (m agl)
-Wind_velE:        145 ; 5.220 (kmph)
-Wind_velN:        -34 ; -1.237 (kmph)
+Wind_hMSL:    3557855 ; 3464.856 (m agl)
+Wind_velE:       1130 ; 40.692 (kmph)
+Wind_velN:        310 ; 11.190 (kmph)
 
-Wind_hMSL:    4258580 ; 3920.580 (m agl)
-Wind_velE:        116 ; 4.188 (kmph)
-Wind_velN:        -25 ; -0.902 (kmph)
-
-Wind_hMSL:    4878079 ; 4540.080 (m agl)
-Wind_velE:        163 ; 5.876 (kmph)
-Wind_velN:        -75 ; -2.723 (kmph)
+Wind_hMSL:    4142329 ; 4049.330 (m agl)
+Wind_velE:        917 ; 33.020 (kmph)
+Wind_velN:        204 ; 7.357 (kmph)
