@@ -148,34 +148,34 @@ Alt_Units:     1 ; Altitude units
 Alt_Step:      0 ; Altitude between announcements
                  ;   0 = No altitude
 
-Wind_hMSL:    1194944 ; 1101.944 (m agl)
-Wind_velE:         32 ; 1.176 (kmph)
-Wind_velN:       -447 ; -16.106 (kmph)
+Wind_hMSL:    1194577 ; 1101.577 (m agl)
+Wind_velE:         40 ; 1.456 (kmph)
+Wind_velN:       -503 ; -18.137 (kmph)
 
-Wind_hMSL:    1475376 ; 1382.377 (m agl)
-Wind_velE:        -28 ; -1.034 (kmph)
-Wind_velN:       -529 ; -19.046 (kmph)
+Wind_hMSL:    1475214 ; 1382.214 (m agl)
+Wind_velE:        -22 ; -0.818 (kmph)
+Wind_velN:       -582 ; -20.985 (kmph)
 
-Wind_hMSL:    1794586 ; 1701.586 (m agl)
-Wind_velE:         61 ; 2.203 (kmph)
-Wind_velN:       -450 ; -16.202 (kmph)
+Wind_hMSL:    1794406 ; 1701.407 (m agl)
+Wind_velE:         96 ; 3.465 (kmph)
+Wind_velN:       -535 ; -19.266 (kmph)
 
-Wind_hMSL:    2155965 ; 2062.965 (m agl)
-Wind_velE:        184 ; 6.640 (kmph)
-Wind_velN:       -277 ; -9.978 (kmph)
+Wind_hMSL:    2155601 ; 2062.601 (m agl)
+Wind_velE:        209 ; 7.531 (kmph)
+Wind_velN:       -336 ; -12.115 (kmph)
 
-Wind_hMSL:    2563739 ; 2470.739 (m agl)
-Wind_velE:        425 ; 15.320 (kmph)
-Wind_velN:       -162 ; -5.843 (kmph)
+Wind_hMSL:    2563125 ; 2470.126 (m agl)
+Wind_velE:        378 ; 13.625 (kmph)
+Wind_velN:       -190 ; -6.841 (kmph)
 
-Wind_hMSL:    3022509 ; 2929.509 (m agl)
-Wind_velE:        689 ; 24.830 (kmph)
-Wind_velN:       -223 ; -8.041 (kmph)
+Wind_hMSL:    3021732 ; 2928.733 (m agl)
+Wind_velE:        555 ; 20.012 (kmph)
+Wind_velN:       -270 ; -9.723 (kmph)
 
-Wind_hMSL:    3538936 ; 3445.937 (m agl)
-Wind_velE:        583 ; 21.015 (kmph)
-Wind_velN:       -298 ; -10.741 (kmph)
+Wind_hMSL:    3538426 ; 3445.426 (m agl)
+Wind_velE:        465 ; 16.774 (kmph)
+Wind_velN:       -289 ; -10.413 (kmph)
 
-Wind_hMSL:    4121202 ; 4028.202 (m agl)
-Wind_velE:        594 ; 21.410 (kmph)
-Wind_velN:       -295 ; -10.638 (kmph)
+Wind_hMSL:    4121564 ; 4028.565 (m agl)
+Wind_velE:        502 ; 18.076 (kmph)
+Wind_velN:       -301 ; -10.856 (kmph)
