@@ -68,21 +68,21 @@ Exit_Min_Alt:        2286 ; Do not detect an exit if below this altitude in mete
 Exit_Exit_Alt:         -1 ; Do not detect an exit if above this altitude in meters
 Time_After_Exit:    10000 ; Lane start time after ext (ms) (negative to disable)
 
-; ref_name: e2w_1
-Reference_LatF: 35.00998
-Reference_LonF: -79.19222
+; ref_name: w2e_1
+Reference_LatF: 35.02818
+Reference_LonF: -79.18943
 Num_Blink_LEDs: 1
-; ref_name: e2w_2
-;Reference_LatF: 35.01599
-;Reference_LonF: -79.19411
-;Num_Blink_LEDs: 2
-; ref_name: e2w_3
+; ref_name: w2e_2
 ;Reference_LatF: 35.02168
 ;Reference_LonF: -79.19167
+;Num_Blink_LEDs: 2
+; ref_name: w2e_3
+;Reference_LatF: 35.01599
+;Reference_LonF: -79.19411
 ;Num_Blink_LEDs: 3
-; ref_name: e2w_4
-;Reference_LatF: 35.02818
-;Reference_LonF: -79.18943
+; ref_name: w2e_4
+;Reference_LatF: 35.00998
+;Reference_LonF: -79.19222
 ;Num_Blink_LEDs: 4
 
 ; Miscellaneous
